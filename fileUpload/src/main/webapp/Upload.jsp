@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="jstl_05.jsp">
-		숫자1 : <input type="text" name="num1"><br>
-		숫자2 : <input type="text" name="num2"><br>
-		<input type="submit" value="OK">
+	<form action="view.jsp" method="post" enctype="multipart/form-data">
+		file : <input type="file" name="File">
+		<input type="submit" value="업로드">
 	</form>
 </body>
 </html>

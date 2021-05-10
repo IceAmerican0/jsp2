@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="jstl_05.jsp">
-		숫자1 : <input type="text" name="num1"><br>
-		숫자2 : <input type="text" name="num2"><br>
+	<form action="jstl_07.jsp">
+		(0,1,2) <input type="text" name="num1">
 		<input type="submit" value="OK">
 	</form>
 </body>

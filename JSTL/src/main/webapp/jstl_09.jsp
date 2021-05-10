@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="jstl_05.jsp">
-		숫자1 : <input type="text" name="num1"><br>
-		숫자2 : <input type="text" name="num2"><br>
-		<input type="submit" value="OK">
-	</form>
+<%
+	String[] arr={"불고기 백반","오므라이스","김치찌개"};
+	request.setAttribute("MENU",arr);
+%>
+	<jsp:forward page="jstl_10.jsp"/>
 </body>
 </html>
