@@ -10,14 +10,13 @@
 	function checkLogin(){
 		 var form=document.loginForm;
 		
-		 var empJ=/\s/g;
-		 var idJ=/^[a-z]{4,12}$/;
-		 var pwJ=/^\d$/;
-		 var phone1J=/^\d{3,4}$/;
-		 var phone2J=/^\d{4}$/;
-		 var nameJ=/^[가-힣]{2,6}$/;
+		 var idJ=/^[a-z]{4,12}$/; //아이디체크 영어로만 4~12자리
+		 var pwJ=/^\d$/; //비밀번호체크 숫자로만
+		 var phone1J=/^\d{3,4}$/; //전화번호 앞자리 3~4자리
+		 var phone2J=/^\d{4}$/; //전화번호 뒷자리 4자리
+		 var nameJ=/^[가-힣]{2,6}$/; //이름 한글로만
 		 var emailJ = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-z]{2,3}$/i; 
-		
+		 //이메일체크 중간@확인, .뒤에 세자리
 		
 		if(idJ.test(form.id.value)==false){
 			alert("영어 소문자와 4~12자리로 아이디를 입력해주세요! ");
